@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    background-image: linear-gradient(to right bottom, #fbfbfb, #e8eaf7, #cedbf3, #adcfee, #84c3e6, #6ebfe4, #54bce2, #2cb8de, #24bbe6, #1cbeee, #13c0f6, #0bc3fe);
+    align-items: center;    
+    justify-content: center;
+    padding-bottom: 5em;
+}
+
+.container {
+    background-image: linear-gradient(to right top, #fdfeff, #f6fbfd, #eef8f7, #ebf5ee, #ecf0e4);
+    border-radius: 0.6em;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.356);
+    position: relative;
+    display: none;
+    padding: 1em 2.4em;
+    
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.date-time {
+    margin: 2em;
+}
+
+.sec-container {
+    border-radius: 0.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 1000px;
+    width: 90%;
+    height: 80vh;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.356);
+   
+}
+
+.bg-img {
+    border-radius: 50%;
+    border: 0;
+}
+
+.error {
+    color: #05b6fc;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 3px;
+
+}
+
+.btn {
+    background-color: white;
+    color: #0aaaea;
+    letter-spacing: 0.1em;
+    border: 1px solid rgb(222, 219, 219);
+
+}
+
+.btn:hover {
+    border: 1px solid #0aaaea;
+    background-color: #0aaaea;
+    color: white;
+
+
+}
+
+.weather-icon {
+    width: auto;
+    margin: auto;
+    max-width: 250px;
+
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.left-side {
+    padding: 2em 0.8em;
+
+}
+
+.icon-card {
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 2px solid #f4f5f6;
+    margin-bottom: 10px;
+    background-color: #24bbe6;
+    box-shadow: 1.2em 2em 2em #24bce634;
+
+
+}
+
+.card-img-top {
+    width: 230px;
+}
+
+.city {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -50px;
+    color: white;
+}
+
+.c-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-header {
+    background-color: #f9fcfd;
+    color: #0aaaea;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    width: 100%;
+
+}
+
+.box {
+    border: 2px solid rgb(13, 168, 229);
+    border-radius: 10px;
+}
+
+.future-forecast {
+    display: flex;
+    justify-content: center !important;
+    margin-top: 7em;
+    margin-bottom: 1.4em;
+
+}
+
+#type-box {
+    padding: 1em;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    background-color: #ecf0e4 !important;
+}
+
+#time {
+    font-size: 80px;
+    font-weight: 100 !important;
+    color: #0aaaea;
+}
+
+#am-pm {
+    font-size: 30px;
+    background-color: #0aaaea;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em;
+}
+
+#windspeed {
+    margin-top: 33px;
+}
+
+#temp,
+#humidity {
+    margin-top: 20px;
+
+}
+
+#sunrise,
+#sunset {
+    margin-top: 10px;
+}
+
+.weather-forecast-item {
+    background-color: #0aaaea;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.weather-forecast-item .card-body .card-text {
+    font-weight: bold;
+    font-size: 1.7em;
+    color: #f2f4f5;
+}
+
+/* icons deco */
+.fa-droplet {
+    font-size: 6em;
+    color: white;
+    margin-top: 16px;
+}
+
+.fa-sun {
+    font-size: 6em;
+    color: rgb(236, 162, 3);
+    margin-top: 16px;
+}
+
+.fa-wind {
+    color: white;
+    font-size: 5em;
+    margin-top: 16px
+}
+
+.w-icon {
+    width: 151px;
+    margin-top: -20px;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 1198px) {
+    /* .w-icon {
+        width: 120px;
+    } */
+
+    .future-forecast {
+        align-items: none;
+        justify-content: start !important;
+        flex-wrap: nowrap !important;
+        overflow-x: scroll;
+
+    }
+    .future-forecast::-webkit-scrollbar {
+        display: none;
+    }
+    .future-forecast{
+        scrollbar-width: none;
+    }
+
+    .next {
+        max-width: 180px;
+    }
+}
